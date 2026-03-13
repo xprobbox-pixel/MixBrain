@@ -2,14 +2,14 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { DAW, Genre, MixArea, EffectGoal, SelectionState, ProductionGuidance, PluginDetail, ProTip, AnalysisGenre, AnalysisGoal, MixAnalysisReport, User } from './types';
 import { DAWS, GENRES, MIX_AREAS, EFFECT_GOALS } from './constants';
-import { Dropdown } from './views/Dropdown';
-import { PluginNode } from './views/PluginNode';
-import { PluginInspector } from './views/PluginInspector';
-import { MixAnalyzer } from './views/MixAnalyzer';
-import { ScalesChords } from './views/ScalesChords';
-import { FrequencyMap } from './views/FrequencyMap';
-import { SplashScreen } from './views/SplashScreen';
-import { AuthSystem } from './views/AuthSystem';
+import { Dropdown } from './core-ui/Dropdown';
+import { PluginNode } from './core-ui/PluginNode';
+import { PluginInspector } from './core-ui/PluginInspector';
+import { MixAnalyzer } from './core-ui/MixAnalyzer';
+import { ScalesChords } from './core-ui/ScalesChords';
+import { FrequencyMap } from './core-ui/FrequencyMap';
+import { SplashScreen } from './core-ui/SplashScreen';
+import { AuthSystem } from './core-ui/AuthSystem';
 import { getProductionGuidance } from './services/gemini-service';
 
 const App: React.FC = () => {
