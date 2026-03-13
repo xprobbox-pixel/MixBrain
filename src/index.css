@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans;
+  }
+}
+
+@layer components {
+  .mono {
+    @apply font-mono;
+  }
+  
+  .hot-pink { color: #ff007f; }
+  .bg-hot-pink { background-color: #ff007f; }
+  .border-hot-pink { border-color: #ff007f; }
+  .cyan { color: #00ffff; }
+  .bg-cyan { background-color: #00ffff; }
+  .yellow { color: #ffff00; }
+  .bg-yellow { background-color: #ffff00; }
+
+  @keyframes fader-move {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .fader-1 { animation: fader-move 2s ease-in-out infinite; }
+  .fader-2 { animation: fader-move 1.5s ease-in-out infinite; animation-delay: 0.3s; }
+  .fader-3 { animation: fader-move 2.5s ease-in-out infinite; animation-delay: 0.6s; }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff007f;
+  }
+}
