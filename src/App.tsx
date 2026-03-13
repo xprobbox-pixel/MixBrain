@@ -2,7 +2,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { DAW, Genre, MixArea, EffectGoal, SelectionState, ProductionGuidance, PluginDetail, ProTip, AnalysisGenre, AnalysisGoal, MixAnalysisReport, User } from './types';
 import { DAWS, GENRES, MIX_AREAS, EFFECT_GOALS } from './constants';
-import { Dropdown } from './core-ui/Dropdown';
+import { Dropdown } from './core-ui/DropdownMenu';
 import { PluginNode } from './core-ui/PluginNode';
 import { PluginInspector } from './core-ui/PluginInspector';
 import { MixAnalyzer } from './core-ui/MixAnalyzer';
